@@ -8,11 +8,23 @@
 using namespace std;
 
 class Entity {
-public:
+    const string m_tag = "Default";
+    bool m_active = true;
+    size_t m_id = 0;
+
     Entity();
 
-    Entity(
-            shared_ptr<CTransform> cTransform,
-            shared_ptr<CCollision> cCollision,
-            shared_ptr<CScore> cScore);
+    Entity(string tag, size_t id);
+
+    friend class EntityManager;
+
+public:
+    void destroy();
+
+    [[nodiscard]] bool isActive() const;
+
+    [[nodiscard]] const string &tag() const;
+
+    [[nodiscard]] size_t id() const;
+
 };
