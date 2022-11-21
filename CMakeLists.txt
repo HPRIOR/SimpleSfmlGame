@@ -3,4 +3,4 @@ project(SimpleSfmlGame)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(SimpleSfmlGame main.cpp Vec2.cpp Vec2.h CCollision.cpp CCollision.h CScore.cpp CScore.h CTransform.cpp CTransform.h Entity.cpp Entity.h EntityManager.cpp EntityManager.h Game.cpp Game.h)
+add_executable(SimpleSfmlGame main.cpp Vec2.cpp Vec2.h CCollision.cpp CCollision.h CScore.cpp CScore.h CTransform.cpp CTransform.h Entity.cpp Entity.h EntityManager.cpp EntityManager.h Game.cpp Game.h CShape.cpp CShape.h)
